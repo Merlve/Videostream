@@ -54,11 +54,11 @@
               <button id="mxButton" class="dropdown-item">MX Player</button>
               <button id="mxpButton" class="dropdown-item">MX Player Pro</button>
               <button id="vlcButton" class="dropdown-item">VLC Mobile</button>
-              <button id="vlcdButton" class="dropdown-item">VLC Desktop</button>
+              <button id="qtpButton" class="dropdown-item">QT Player (Mac OS)</button>
               <button id="potplayerButton" class="dropdown-item">Pot Player</button>
               <button id="iina" class="dropdown-item">IINA Player</button>
               <button id="kmplayButton" class="dropdown-item">KMPlayer</button>
-              <button id="hdplayButton" class="dropdown-item">HDPlayer</button>
+              <button id="nplayerButton" class="dropdown-item">nPlayer</button>
             </div>
           </div>
         </div>
@@ -132,7 +132,7 @@
       document.getElementById("vlcButton").onclick = function() {
         location.href = `vlc://${videoUrl}`;
       };
-      document.getElementById("vlcdButton").onclick = function() {
+      document.getElementById("qtpButton").onclick = function() {
         window.open(`vlc://${videoUrl}`);
       };
       document.getElementById("potplayerButton").onclick = function() {
@@ -144,8 +144,8 @@
       document.getElementById("kmplayButton").onclick = function() {
         location.href = `intent:${videoUrl}#Intent;package=com.kmplayer;end`;
       };
-      document.getElementById("hdplayButton").onclick = function() {
-        location.href = `intent:${videoUrl}#Intent;package=uplayer.video.player;end`;
+      document.getElementById("nplayerButton").onclick = function() {
+        location.href = `nplayer-${url}`;
       };
     </script>
     <!-- Popunder Ads -->
