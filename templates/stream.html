@@ -54,7 +54,7 @@
               <button id="mxButton" class="dropdown-item">MX Player</button>
               <button id="vlcButton" class="dropdown-item">VLC Mobile</button>
               <button id="potplayerButton" class="dropdown-item">Pot Player</button>
-              <button id="splayButton" class="dropdown-item">SPlayer</button>
+              <button id="iina" class="dropdown-item">IINA Player</button>
               <button id="kmplayButton" class="dropdown-item">KMPlayer</button>
               <button id="hdplayButton" class="dropdown-item">HDPlayer</button>
             </div>
@@ -130,8 +130,8 @@
       document.getElementById("potplayerButton").onclick = function() {
         location.href = `potplayer://${videoUrl}`;
       };
-      document.getElementById("splayButton").onclick = function() {
-        location.href = `intent:${videoUrl}#Intent;action=com.young.simple.player.playback_online;package=com.young.simple.player;end`;
+      document.getElementById("iina").onclick = function() {
+        location.href = `iina://weblink?url=${videoUrl}`;
       };
       document.getElementById("kmplayButton").onclick = function() {
         location.href = `intent:${videoUrl}#Intent;package=com.kmplayer;end`;
