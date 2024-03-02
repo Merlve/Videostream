@@ -133,7 +133,7 @@
         location.href = `vlc://${videoUrl}`;
       };
       document.getElementById("vlcdButton").onclick = function() {
-        window.open = `vlc://${videoUrl}`;
+        window.open(`vlc://${videoUrl}`);
       };
       document.getElementById("potplayerButton").onclick = function() {
         location.href = `potplayer://${videoUrl}`;
