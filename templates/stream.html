@@ -133,6 +133,10 @@
         location.href = `vlc://${videoUrl}`;
       };
       document.getElementById("qtpButton").onclick = function() {
+      var appleScript = 'tell application "QuickTime Player"\nopenURL "' + ${videoUrl} + '"\nend tell';
+      window.location.href = "javascript:" + encodeURIComponent(appleScript);
+      };
+      document.getElementById("qtpButton").onclick = function() {
         window.open(`vlc://${videoUrl}`);
       };
       document.getElementById("potplayerButton").onclick = function() {
