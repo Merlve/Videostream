@@ -52,7 +52,9 @@
               <i class="fa fa-circle-play"></i> Stream <i class="fa fa-circle-play"></i></button>
             <div id="dropmenu" class="dropdown-menu">
               <button id="mxButton" class="dropdown-item">MX Player</button>
+              <button id="mxpButton" class="dropdown-item">MX Player Pro</button>
               <button id="vlcButton" class="dropdown-item">VLC Mobile</button>
+              <button id="vlcdButton" class="dropdown-item">VLC Desktop</button>
               <button id="potplayerButton" class="dropdown-item">Pot Player</button>
               <button id="iina" class="dropdown-item">IINA Player</button>
               <button id="kmplayButton" class="dropdown-item">KMPlayer</button>
@@ -124,8 +126,14 @@
       document.getElementById("mxButton").onclick = function() {
         location.href = `intent:${videoUrl}#Intent;package=com.mxtech.videoplayer.ad;end`;
       };
+       document.getElementById("mxpButton").onclick = function() {
+        location.href = `intent:${videoUrl}#Intent;package=com.mxtech.videoplayer.pro;end`;
+      };
       document.getElementById("vlcButton").onclick = function() {
         location.href = `vlc://${videoUrl}`;
+      };
+      document.getElementById("vlcdButton").onclick = function() {
+        window.open = `vlc://${videoUrl}`;
       };
       document.getElementById("potplayerButton").onclick = function() {
         location.href = `potplayer://${videoUrl}`;
